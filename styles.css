@@ -1,11 +1,11 @@
 .row{
     display: flex;
-    height:6.25%;
+    /* height:6.25%; */
 }
 .col{
     background-color: white;
     border: black;
-    width: 6.25%;
+    /* width: 6.25%; */
     margin: 0;
     padding: 0;
 }
