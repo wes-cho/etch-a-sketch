@@ -1,0 +1,7 @@
+.row{
+    display: flex;
+    height:3rem;
+}
+.col{
+    background-color: white;
+}
