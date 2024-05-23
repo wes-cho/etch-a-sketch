@@ -18,7 +18,7 @@ for(let i=0; i<16; i++){
 
 let nodeListOfTiles = document.getElementsByClassName("col");
 for(let i=0; i<256; i++){
-    let tile = nodeListOfSquares[i];
+    let tile = nodeListOfTiles[i];
     tile.addEventListener("mouseover", () => {
         tile.classList.add("hover");
     });
