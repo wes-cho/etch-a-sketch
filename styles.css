@@ -4,4 +4,12 @@
 }
 .col{
     background-color: white;
+    border: black;
+    width:3rem;
+    margin: 0;
+    padding: 0;
+}
+.hover{
+    background-color: black;
+    border: black;
 }

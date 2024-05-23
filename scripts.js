@@ -12,6 +12,19 @@ for(let i=0; i<16; i++){
     for(let j=0; j<16; j++){
         let col = document.createElement("div");
         col.classList.add("col");
+
+        //col.textContent = 'column';
         row.appendChild(col);
     };
 };
+
+let nodeListOfSquares = document.getElementsByClassName("col");
+for(let i=0; i<256; i++){
+    let individualBox = nodeListOfSquares[i];
+    individualBox.addEventListener("mouseover", () => {
+        individualBox.classList.add("hover");
+    });
+};
+
+
+
