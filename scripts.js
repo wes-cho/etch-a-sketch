@@ -1,7 +1,10 @@
 let startButton = document.getElementById("button");
-startButton.addEventListener("click", () => {
+startButton.addEventListener("click", () => {    
     let userInput = prompt("How many squares per side would you like your board to be between 2 and 100?");
     let boardSize = Number(userInput);
+
+    //remove old board
+    container.replaceChildren();
 
     // creates rows according to user input with unique ids
     for(let i=0; i<boardSize; i++){
@@ -21,6 +24,7 @@ startButton.addEventListener("click", () => {
             let widthInPercent = 100/boardSize;
             col.style.width = `${widthInPercent}%`;
             col.classList.add("col");
+            col.setAttribute("id", `col${j+1}`);
             row.appendChild(col);
         };
     };
@@ -33,8 +37,4 @@ startButton.addEventListener("click", () => {
             tile.classList.add("hover");
         });
     };
-
 });
-
-
-
